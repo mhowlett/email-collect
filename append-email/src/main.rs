@@ -24,7 +24,7 @@ fn main() {
             _ => { }
         }
 
-        Ok(response.body("ok".as_bytes().to_vec())?)
+        Ok(response.header("Access-Control-Origin-Allow", "*").body("ok".as_bytes().to_vec())?)
     });
 
     server.listen("0.0.0.0", "7979");
