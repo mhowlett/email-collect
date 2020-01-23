@@ -1,3 +1,5 @@
+#!/bin/bash
+
 PATH="$HOME/.cargo/bin:$PATH"
 cd /src/
 cargo build --release
