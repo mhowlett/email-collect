@@ -3,8 +3,5 @@ name = "append-email"
 version = "0.1.0"
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
 simple-server = "0.4.0"
-closure = "0.2.0"

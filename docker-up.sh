@@ -2,6 +2,7 @@
 
 docker run -d --name email-landing \
     -p localhost:7979:7979 \
-    -v ~/git/email-landing/:/config/ \
+    -v /git/prelaunch-landing/append-email:/src/ \
+    -v /data/prelaunch-landing:/data/ \
     landing:1 \
-    nginx -c /config/nginx.conf
+    /src/bootstrap.sh
